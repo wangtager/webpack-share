@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'development',   // 指定构建模式
     entry: {
-      'share': './src/index.js'
+      'share/js': './src/index.js'
     },  // 指定构建入口文件
     output: {
         // publicPath: 'https://www.lzwkcdn.com/', // 根据不用环境配置
@@ -14,7 +14,7 @@ module.exports = {
       new htmlWebpackPlugin({
         inject: false,
         // excludeChunks: ['share'], // 排除后htmlWebpackPlugin.files也无法获取到
-        filename: path.resolve(__dirname, './dist/[name].html'),
+        filename: path.resolve(__dirname, './dist/share.html'),
         template: './src/index.html', // 明确指定html文件
         custom: 'Use htmlWebpackPlugin.options to get the value',
         // base: path.resolve(__dirname, './dist')
