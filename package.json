@@ -2,7 +2,7 @@
   "name": "webpack-share",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "./src/index.js",
   "scripts": {
     "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^5.2.0",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0"
   }
